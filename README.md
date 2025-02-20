@@ -9,6 +9,16 @@ This procedure outlines the steps to extract text from a sample document using A
 
 ---
 
+## Architecture Diagram
+<img src="https://imgur.com/LdL5mQs.jpg" height="80%" width="80%" alt="Architecture Diagram"/>
+
+---
+
+## Begin: Open the AWS Console
+<img src="https://imgur.com/mzb2xM0.jpg" height="80%" width="80%" alt="Open AWS Console"/>
+
+---
+
 ## Step 1: Extract Text Using Amazon Textract
 **Concept:** Amazon Textract is a machine learning (ML) service that automatically extracts text, handwriting, layout elements, and data from scanned documents.
 
@@ -16,6 +26,8 @@ This procedure outlines the steps to extract text from a sample document using A
 2. In the left navigation pane, click **Analyze Document**.
 3. On the Analyze Document page, explore the extracted information by clicking the available tabs.
 4. Proceed to the next step.
+
+<img src="https://imgur.com/ztNO5EI.jpg" height="80%" width="80%" alt="Navigate to Textract and View Formats"/>
 
 ---
 
@@ -29,6 +41,8 @@ This procedure outlines the steps to extract text from a sample document using A
 4. Click **Listen** to preview the synthesized audio.
 5. Proceed to the next step.
 
+<img src="https://imgur.com/AQzXBtm.jpg" height="80%" width="80%" alt="Navigate to Polly and test Polly"/>
+
 ---
 
 ## Step 3: Access the Amazon S3 Bucket
@@ -38,6 +52,8 @@ This procedure outlines the steps to extract text from a sample document using A
 2. On the **General purpose buckets** tab, click the S3 bucket name that begins with `labdatabucket-`.
 3. Proceed to the next step.
 
+<img src="https://imgur.com/oQtTPS4.jpg" height="80%" width="80%" alt="Navigate to S3 to select Bucket"/>
+
 ---
 
 ## Step 4: Review the Sample Document
@@ -45,6 +61,8 @@ This procedure outlines the steps to extract text from a sample document using A
 
 1. In the **Objects** tab, locate and review the provided sample JPEG file.
 2. Proceed to the next step.
+
+<img src="https://imgur.com/yWsfSc3.jpg" height="80%" width="80%" alt="Review file"/>
 
 ---
 
@@ -68,6 +86,8 @@ This procedure outlines the steps to extract text from a sample document using A
 3. Click the **Test** tab.
 4. Proceed to the next step.
 
+<img src="https://imgur.com/QNgVh94.jpg" height="80%" width="80%" alt="Text to speech code review in Lambda"/>
+
 ---
 
 ## Step 7: Create a Test Event
@@ -77,6 +97,8 @@ This procedure outlines the steps to extract text from a sample document using A
 2. Click **Save**.
 3. Proceed to the next step.
 
+<img src="https://imgur.com/GzKLogV.jpg" height="80%" width="80%" alt="Create Lambda function"/>
+
 ---
 
 ## Step 8: Execute the Test Event
@@ -84,6 +106,8 @@ This procedure outlines the steps to extract text from a sample document using A
 
 1. Click **Test** to execute the event.
 2. Proceed to the next step.
+
+<img src="https://imgur.com/3pFCke7.jpg" height="80%" width="80%" alt="Test Lambda function"/>
 
 ---
 
@@ -93,6 +117,8 @@ This procedure outlines the steps to extract text from a sample document using A
 1. In the **Details** section, review the `taskId`.
 2. Under **Log output**, verify the extracted text from the image file.
 3. Proceed to the next step.
+
+<img src="https://imgur.com/MnbAURb.jpg" height="80%" width="80%" alt="Verify Lambda function"/>
 
 ---
 
@@ -104,3 +130,6 @@ This procedure outlines the steps to extract text from a sample document using A
 3. Click **Download**.
 4. Open the file with a local audio player to listen to the converted text.
 5. **Process complete.**
+
+<img src="https://imgur.com/7VJkMYG.jpg" height="80%" width="80%" alt="Download file from S3"/>
+<img src="https://imgur.com/pCZIJzA.jpg" height="80%" width="80%" alt="Test of downloaded MP3 file from AWS"/>
