@@ -1,4 +1,5 @@
-# Document Handling Using Amazon Textract and Amazon Polly
+# Project: Document Handling Using Amazon Textract and Amazon Polly
+Date:  2025-02-20
 
 ## Description
 This procedure outlines the steps to extract text from a sample document using Amazon Textract, convert the extracted text into MP3 audio format using Amazon Polly, and use an AWS Lambda function to automate the process. The final step verifies the generated MP3 file in an Amazon Simple Storage Service (Amazon S3) bucket.
