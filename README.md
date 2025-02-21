@@ -45,7 +45,6 @@ This procedure outlines the steps to extract text from a sample document using A
 1. Navigate to the [Amazon Polly console](https://console.aws.amazon.com/polly/).
 2. In the left navigation pane, select **Text-to-Speech**.
 3. Review the history of completed S3 synthesis tasks under the **Text-to-Speech** section.
-   - Ensure that a completed task using the generative voice ID "Ruth" is available.
 4. Click **Listen** to preview the synthesized audio.
 5. Proceed to the next step.
 
@@ -67,7 +66,7 @@ This procedure outlines the steps to extract text from a sample document using A
 ## Step 4: Review the Sample Document
 **Concept:** Amazon S3 allows storage of large volumes of data, with individual objects ranging from 0 bytes to 5 TB.
 
-1. In the **Objects** tab, locate and review the provided sample JPEG file.
+1. In the **Objects** tab, locate and review the JPEG file.
 2. Proceed to the next step.
 
 <img src="https://imgur.com/yWsfSc3.jpg" height="80%" width="80%" alt="Review file"/>
@@ -90,7 +89,7 @@ This procedure outlines the steps to extract text from a sample document using A
 1. Scroll to the **Code source** section.
 2. In the **Code** tab, review the `lambda_function.py` file:
    - **Line 4:** References an environment variable for the S3 bucket name.
-   - **Lines 12 and 29:** Utilize the `detect_document_text` and `start_speech_synthesis_task` API calls. Note the ability to modify `VoiceID` and `Engine` parameters.
+   - **Lines 12 and 29:** Utilize the `detect_document_text` and `start_speech_synthesis_task` API calls. End user has the ability to modify `VoiceID` and `Engine` parameters.
 3. Click the **Test** tab.
 4. Proceed to the next step.
 
